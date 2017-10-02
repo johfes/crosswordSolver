@@ -1,0 +1,16 @@
+AppBundle\Entity\Word:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\WordRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        word:
+            type: string
+            length: 255
+            unique: false
+    lifecycleCallbacks: {  }
